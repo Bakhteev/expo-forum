@@ -1,0 +1,32 @@
+@mixin flexbox( $align-items: center, $justify-content: center) {
+    display: flex;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+@mixin absoluteCenterX {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@mixin absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin font($size, $line-height, $letter-spacing: auto, $text-transform: uppercase, $weight: bold, $style: normal) {
+	font-size: $size;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    text-transform: $text-transform;
+    font-weight: $weight;
+    font-style: $style;
+}
+$maxWidth: 1920;
+@mixin adaptiv-font($pcSize, $mobSize) {
+ $addSize: $pcSize - $mobSize;
+ $maxWidth: $maxWidth - 320;
+ font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+

@@ -1,0 +1,40 @@
+.container{
+    max-width: 1114px;
+    margin: 0 auto;
+}
+.title{
+   
+}
+.description{
+  
+}
+
+.btn{
+    &:hover{
+    }
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+.h100{
+    height: 100%;
+}
+.col-6{
+    width: 50%;
+}
+.col-5{
+    width: 41.67%;
+}
+.col-4{
+    width: 25%;
+}
+.col-3{
+    width: 33.33%;
+}
+.none{
+    display: none;
+}
+.h100{
+    height: 100%;
+}

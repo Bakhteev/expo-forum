@@ -1,0 +1,239 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1114px;
+  margin: 0 auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-5 {
+  width: 41.67%;
+}
+
+.col-4 {
+  width: 25%;
+}
+
+.col-3 {
+  width: 33.33%;
+}
+
+.none {
+  display: none;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.header {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 33px;
+  width: 100%;
+}
+
+.header__content {
+  max-width: 1560px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  margin-right: 311px;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 1073px;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  min-width: 586px;
+}
+
+.header__language {
+  position: relative;
+}
+
+.header__language::before {
+  position: absolute;
+  content: "";
+  background: url(../../img/header/Globe.svg);
+  top: -7px;
+  left: -26px;
+  width: 20px;
+  height: 17px;
+}
+
+.header__language::after {
+  position: absolute;
+  content: "";
+  background: url(../../img/header/Search.svg);
+  top: -7px;
+  left: -85px;
+  width: 20px;
+  height: 18px;
+}
+
+.hero {
+  position: relative;
+  background: url(../img/hero/bg.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  z-index: 1;
+}
+
+.hero::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+
+.hero__row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.hero__title {
+  font-size: 64px;
+  line-height: 160%;
+  letter-spacing: auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.hero__descriotuon {
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.hero__item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30px 0 30px 40px;
+  max-width: 255px;
+  height: 148px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 21px;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  font-weight: 500;
+  font-style: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 30px 30px 0;
+}
+
+.hero__item:nth-child(1) {
+  background-color: #2378FC;
+}
+
+.hero__item:nth-child(2) {
+  background-color: #30BCC9;
+  margin-right: 0;
+}
+
+.hero__item:nth-child(3) {
+  background-color: #FFC41E;
+}
+
+.hero__item:nth-child(4) {
+  background-color: #F6404F;
+  margin-right: 0;
+}
+
+.hero__item__title {
+  text-align: left;
+}
